@@ -9,3 +9,18 @@ function indetityFuncTwo(val: any): any {
 function indetityFuncThree<Type>(val: Type): Type {
     return val
 }
+
+interface Bootle{
+    brand: string,
+    type: number
+}
+
+function getSearchProducts<T>(products: T[]): T {
+    return products[0];
+}
+
+// with Arrow Function
+
+const AllProducts = <T>(products: T[]): T => {
+    return products[0];
+}
